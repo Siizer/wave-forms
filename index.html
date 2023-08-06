@@ -30,9 +30,9 @@
   <script>
     // Set up the wave containers
     const waveContainers = [
-      { id: "wave-container-1", waveIndex: 0, text: "0.5*sin(x)" },
-      { id: "wave-container-2", waveIndex: 1, text: "0.7*sin(2*x + π/2)" },
-      { id: "wave-container-3", waveIndex: 2, text: "0.5*sin(x + π)" },
+      { id: "wave-container-1", waveIndex: 0, text: "" },
+      { id: "wave-container-2", waveIndex: 1, text: "π/2" },
+      { id: "wave-container-3", waveIndex: 2, text: "π" },
     ];
 
     const waves = [
@@ -89,7 +89,7 @@
         .attr("x", width / 2)
         .attr("y", -margin.top / 2)
         .attr("text-anchor", "middle")
-        .text(` ${wave.amplitude}*sin(${wave.frequency}*x + ${wave.phase}) `);
+        .text(` ${wave.amplitude.toFixed(1)}*sin(${wave.frequency.toFixed(1)}*x + ${wave.phase.toFixed(1)}) `);
 
       const controlsContainer = d3.select(`#${container.id}`)
         .append("div")
