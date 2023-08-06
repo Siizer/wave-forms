@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Sinusoidal Waves</title>
-  <script type="module" src="main.js"></script>
   <style>
     .wave-container {
       display: flex;
@@ -28,9 +27,9 @@
   <script>
     // Set up the wave containers
     const waveContainers = [
-      { id: "wave-container-1", waveIndex: 0 },
-      { id: "wave-container-2", waveIndex: 1 },
-      { id: "wave-container-3", waveIndex: 2 },
+      { id: "0.5*sine(x)", waveIndex: 0 },
+      { id: "0.7*sine(2*x+45º)", waveIndex: 1 },
+      { id: "0.3*sine(3*x+180º)", waveIndex: 2 },
     ];
 
     const waves = [
