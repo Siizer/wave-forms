@@ -22,7 +22,7 @@ This project provides a visualization of three sinusoidal waveforms. Users can a
 
 ## Acknowledgements
 
-- [External Library Used](d3.js)
+- https://d3js.org/d3.v6.min.js)https://d3js.org/d3.v6.min.js
 - [Inspiration](d3.org)
 
 ---
